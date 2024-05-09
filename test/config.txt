@@ -1,0 +1,3 @@
+hostname=host.docker.internal
+windowsHostsPath=\path\to\project\test\test_win
+linuxHostsPath=/mnt/path/to/project/test/test_lin

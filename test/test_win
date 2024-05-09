@@ -1,0 +1,10 @@
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+# Added by Docker Desktop
+127.0.10.1 host.docker.internal
+127.0.10.1 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
