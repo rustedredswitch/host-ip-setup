@@ -1,2 +1,3 @@
-# automate-tedious-tasks
-I use this repository to store projects that allow me to automate boring and repetitive tasks
+# Host IP setup
+Powershell script that update specific hostnames with the current machine's IP  
+**USE WITH CAUTION**
