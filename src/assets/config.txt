@@ -1,0 +1,3 @@
+hostname=host.docker.internal
+windowsHostsPath=C:\Windows\System32\drivers\etc\hosts
+linuxHostsPath=/etc/hosts
