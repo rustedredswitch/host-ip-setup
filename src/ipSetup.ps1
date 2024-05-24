@@ -20,6 +20,12 @@ foreach ($line in $config) {
 
 # Get the IP address
 $NetConnection = Test-NetConnection
+
+[Console]::ForegroundColor = [ConsoleColor]::Blue
+Write-Output "Host IP Setup are running"
+Write-Output "developed by rustedredswitch under GNU 3.0"
+[Console]::ResetColor()
+
 $InterfaceAlias = $NetConnection.InterfaceAlias
 $Ip = $NetConnection.SourceAddress.IPAddress
 Write-Output "Current IP: $Ip"
@@ -37,5 +43,7 @@ Write-Output "Old $hostname IP in Windows: $IpWin"
 $windowsHostsContent = $windowsHostsContent -replace "$IpWin", $Ip
 [System.IO.File]::WriteAllLines($windowsHostsPath, $windowsHostsContent)
 
+[Console]::ForegroundColor = [ConsoleColor]::Blue
 Write-Output "IP configuration setup completed"
 Write-Output "Have a nice day"
+[Console]::ResetColor()
